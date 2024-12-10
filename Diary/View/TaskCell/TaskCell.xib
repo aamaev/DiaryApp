@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="79" id="Osg-rR-3fJ" customClass="TaskCell" customModule="Diary" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="79"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Osg-rR-3fJ" id="eBI-GK-TVB">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="Bcd-um-oFc">
+                        <rect key="frame" x="20" y="5" width="358" height="69"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eq8-bb-dIL">
+                                <rect key="frame" x="0.0" y="0.0" width="45.666666666666664" height="34.666666666666664"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQS-kd-Teu">
+                                <rect key="frame" x="0.0" y="34.666666666666657" width="36" height="34.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" name="backgroundColor"/>
+                <constraints>
+                    <constraint firstItem="Bcd-um-oFc" firstAttribute="top" secondItem="eBI-GK-TVB" secondAttribute="top" constant="5" id="3f2-B1-QqY"/>
+                    <constraint firstAttribute="bottom" secondItem="Bcd-um-oFc" secondAttribute="bottom" constant="5" id="5Uf-8n-FZq"/>
+                    <constraint firstItem="Bcd-um-oFc" firstAttribute="leading" secondItem="eBI-GK-TVB" secondAttribute="leading" constant="20" id="ie6-5F-Gk5"/>
+                    <constraint firstAttribute="trailing" secondItem="Bcd-um-oFc" secondAttribute="trailing" constant="15" id="no9-hX-JFU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="stackView" destination="Bcd-um-oFc" id="OtX-yA-jzx"/>
+                <outlet property="taskNameLabel" destination="eq8-bb-dIL" id="F7i-X9-k1n"/>
+                <outlet property="timeRangeLabel" destination="gQS-kd-Teu" id="O1h-fS-1rS"/>
+            </connections>
+            <point key="canvasLocation" x="290.83969465648852" y="-1.0563380281690142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="backgroundColor">
+            <color red="0.99999994039535522" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

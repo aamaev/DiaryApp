@@ -6,8 +6,26 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		238A065B1931E4343608923A /* Pods_Diary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B127FC7B50B112A92BA71C0 /* Pods_Diary.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09D29A7B2D06F5FD0027F42A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 095DFEF02D019641000ECC20 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 095DFEF72D019641000ECC20;
+			remoteInfo = Diary;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		095DFEF82D019641000ECC20 /* Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Diary.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09D29A772D06F5FC0027F42A /* DiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DiaryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0B127FC7B50B112A92BA71C0 /* Pods_Diary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Diary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17B0C11601235DCCEBE7AC07 /* Pods-Diary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diary.debug.xcconfig"; path = "Target Support Files/Pods-Diary/Pods-Diary.debug.xcconfig"; sourceTree = "<group>"; };
+		22A521274FC56B697E3D6507 /* Pods-Diary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Diary.release.xcconfig"; path = "Target Support Files/Pods-Diary/Pods-Diary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -15,6 +33,13 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+			);
+			target = 095DFEF72D019641000ECC20 /* Diary */;
+		};
+		09A7BA152D07094300BCBC0F /* Exceptions for "DiaryTests" folder in "Diary" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Diary.xctestplan,
 			);
 			target = 095DFEF72D019641000ECC20 /* Diary */;
 		};
@@ -29,10 +54,26 @@
 			path = Diary;
 			sourceTree = "<group>";
 		};
+		09D29A782D06F5FD0027F42A /* DiaryTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				09A7BA152D07094300BCBC0F /* Exceptions for "DiaryTests" folder in "Diary" target */,
+			);
+			path = DiaryTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		095DFEF52D019641000ECC20 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				238A065B1931E4343608923A /* Pods_Diary.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09D29A742D06F5FC0027F42A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -46,7 +87,10 @@
 			isa = PBXGroup;
 			children = (
 				095DFEFA2D019641000ECC20 /* Diary */,
+				09D29A782D06F5FD0027F42A /* DiaryTests */,
 				095DFEF92D019641000ECC20 /* Products */,
+				15EB9CB74CA7A9AF53CF4505 /* Pods */,
+				1EB3802CE1350DDB357D47E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,8 +98,26 @@
 			isa = PBXGroup;
 			children = (
 				095DFEF82D019641000ECC20 /* Diary.app */,
+				09D29A772D06F5FC0027F42A /* DiaryTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		15EB9CB74CA7A9AF53CF4505 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17B0C11601235DCCEBE7AC07 /* Pods-Diary.debug.xcconfig */,
+				22A521274FC56B697E3D6507 /* Pods-Diary.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		1EB3802CE1350DDB357D47E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B127FC7B50B112A92BA71C0 /* Pods_Diary.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 095DFF0B2D019643000ECC20 /* Build configuration list for PBXNativeTarget "Diary" */;
 			buildPhases = (
+				4C1ED050548860A1A92EC850 /* [CP] Check Pods Manifest.lock */,
 				095DFEF42D019641000ECC20 /* Sources */,
 				095DFEF52D019641000ECC20 /* Frameworks */,
 				095DFEF62D019641000ECC20 /* Resources */,
+				2E34ED97DD753B756F1632AD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -77,11 +141,32 @@
 				095DFEFA2D019641000ECC20 /* Diary */,
 			);
 			name = Diary;
-			packageProductDependencies = (
-			);
 			productName = Diary;
 			productReference = 095DFEF82D019641000ECC20 /* Diary.app */;
 			productType = "com.apple.product-type.application";
+		};
+		09D29A762D06F5FC0027F42A /* DiaryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09D29A7F2D06F5FD0027F42A /* Build configuration list for PBXNativeTarget "DiaryTests" */;
+			buildPhases = (
+				09D29A732D06F5FC0027F42A /* Sources */,
+				09D29A742D06F5FC0027F42A /* Frameworks */,
+				09D29A752D06F5FC0027F42A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09D29A7C2D06F5FD0027F42A /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				09D29A782D06F5FD0027F42A /* DiaryTests */,
+			);
+			name = DiaryTests;
+			packageProductDependencies = (
+			);
+			productName = DiaryTests;
+			productReference = 09D29A772D06F5FC0027F42A /* DiaryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +180,10 @@
 				TargetAttributes = {
 					095DFEF72D019641000ECC20 = {
 						CreatedOnToolsVersion = 16.1;
+					};
+					09D29A762D06F5FC0027F42A = {
+						CreatedOnToolsVersion = 16.1;
+						TestTargetID = 095DFEF72D019641000ECC20;
 					};
 				};
 			};
@@ -113,6 +202,7 @@
 			projectRoot = "";
 			targets = (
 				095DFEF72D019641000ECC20 /* Diary */,
+				09D29A762D06F5FC0027F42A /* DiaryTests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,7 +215,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09D29A752D06F5FC0027F42A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2E34ED97DD753B756F1632AD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Diary/Pods-Diary-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Diary/Pods-Diary-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Diary/Pods-Diary-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C1ED050548860A1A92EC850 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Diary-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		095DFEF42D019641000ECC20 /* Sources */ = {
@@ -135,24 +274,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		09D29A732D06F5FC0027F42A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09D29A7C2D06F5FD0027F42A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 095DFEF72D019641000ECC20 /* Diary */;
+			targetProxy = 09D29A7B2D06F5FD0027F42A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		095DFF0C2D019643000ECC20 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17B0C11601235DCCEBE7AC07 /* Pods-Diary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2V46R9HSAP;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Diary/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Diary App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -168,19 +327,24 @@
 		};
 		095DFF0D2D019643000ECC20 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22A521274FC56B697E3D6507 /* Pods-Diary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 2V46R9HSAP;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Diary/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Diary App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -246,7 +410,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -303,13 +467,51 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09D29A7D2D06F5FD0027F42A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2V46R9HSAP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aamaev.DiaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Diary";
+			};
+			name = Debug;
+		};
+		09D29A7E2D06F5FD0027F42A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2V46R9HSAP;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aamaev.DiaryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Diary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Diary";
 			};
 			name = Release;
 		};
@@ -330,6 +532,15 @@
 			buildConfigurations = (
 				095DFF0C2D019643000ECC20 /* Debug */,
 				095DFF0D2D019643000ECC20 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09D29A7F2D06F5FD0027F42A /* Build configuration list for PBXNativeTarget "DiaryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09D29A7D2D06F5FD0027F42A /* Debug */,
+				09D29A7E2D06F5FD0027F42A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

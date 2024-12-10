@@ -1,0 +1,39 @@
+{
+  "configurations" : [
+    {
+      "id" : "FC79454E-0DD3-49C1-9D99-12B4890FE9F7",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:Diary.xcodeproj",
+      "identifier" : "095DFEF72D019641000ECC20",
+      "name" : "Diary"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "selectedTags" : {
+        "includeXCTests" : true
+      },
+      "skippedTests" : [
+        "DiaryTests",
+        "DiaryTests\/testAddTask()",
+        "DiaryTests\/testDeleteTask()",
+        "DiaryTests\/testEmptyTasks()",
+        "DiaryTests\/testTasksForDate()"
+      ],
+      "target" : {
+        "containerPath" : "container:Diary.xcodeproj",
+        "identifier" : "09D29A762D06F5FC0027F42A",
+        "name" : "DiaryTests"
+      }
+    }
+  ],
+  "version" : 1
+}
